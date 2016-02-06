@@ -9,7 +9,18 @@
         <title>Login</title>
         <link href="css/bootstrap.css" rel="stylesheet">
     </head>
-    <body>
+<body>
+ <div class="container">
+    <%--header--%>
+    <div class="row">
+        <div class="col-sm-12">
+            <h3 class="text-center">Login please</h3>
+        </div>
+    </div>
+    	<%--main--%>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
         <h3>Login</h3>
         <hr/>
         <form name="loginForm" method="POST" action="controller">
@@ -26,5 +37,11 @@
                 Registration:<br/>
                 <input type="submit" value="Enter">
         </form><hr/>
-    </body>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+        <%--footer--%>
+    <div class="row"></div>
+   </div>     
+ </body>
 </html>
