@@ -25,7 +25,7 @@ public class UsersDAOImpl implements UsersDAO{
 	    Statement statement = null;
 	    ResultSet resultSet = null;
 	    try{
-//			con = ConnectionManager.getConnection();
+
 	    	con = DataSourse.getInstance().getConnection();
 			statement = con.createStatement();
 			resultSet = statement.executeQuery(query);
@@ -65,7 +65,7 @@ public class UsersDAOImpl implements UsersDAO{
 		Connection con = null;
 		PreparedStatement statement = null;
 		try{
-//			con = ConnectionManager.getConnection();
+
 			con = DataSourse.getInstance().getConnection();
 			statement = con.prepareStatement(query);
 			statement.setString(1, login);
@@ -97,7 +97,7 @@ public class UsersDAOImpl implements UsersDAO{
 		Connection con = null;
 		PreparedStatement statement = null;
 		try{
-//			con = ConnectionManager.getConnection();
+
 			con = DataSourse.getInstance().getConnection();
 			statement = con.prepareStatement(query);
 			statement.setString(1, email);
@@ -127,7 +127,7 @@ public class UsersDAOImpl implements UsersDAO{
 		Connection con = null;
 		PreparedStatement statement = null;
 		try{
-//			con = ConnectionManager.getConnection();
+
 			con = DataSourse.getInstance().getConnection();
 			statement = con.prepareStatement(query);
 			statement.setInt(1, id);
@@ -157,7 +157,7 @@ public class UsersDAOImpl implements UsersDAO{
 		Statement statement = null;
 		ResultSet resultSet = null;
 		try{
-//			con = ConnectionManager.getConnection();
+
 			con = DataSourse.getInstance().getConnection();
 			statement = con.createStatement();
 			resultSet = statement.executeQuery(query);
@@ -206,7 +206,7 @@ public class UsersDAOImpl implements UsersDAO{
 		PreparedStatement statement = null;
 		ResultSet resultSet = null;
 		try{
-//			con = ConnectionManager.getConnection();
+
 			con = DataSourse.getInstance().getConnection();
 			statement = con.prepareStatement(query);
 			statement.setString(1, usertype);
@@ -303,7 +303,7 @@ public class UsersDAOImpl implements UsersDAO{
 		PreparedStatement statement = null;
 		ResultSet resultSet = null;
 		try{
-//			con = ConnectionManager.getConnection();
+
 			con = DataSourse.getInstance().getConnection();
 			statement = con.prepareStatement(query);
 			statement.setString(1, login);
@@ -351,7 +351,7 @@ public class UsersDAOImpl implements UsersDAO{
 		ResultSet resultSet = null;
 		boolean result = false;
 		try{
-//			con = ConnectionManager.getConnection();
+
 			con = DataSourse.getInstance().getConnection();
 				statement = con.prepareStatement(query);
 				statement.setString(1, login);
@@ -380,17 +380,5 @@ public class UsersDAOImpl implements UsersDAO{
 		}
 		return result;
 	}
-	public static void main(String[] args) throws UsersDAOException {
-		
-		UsersDAOImpl usersDAO = new UsersDAOImpl();
-		
-		System.out.println(usersDAO.findSize());
-//		System.out.println(projectsDAO.findProjectsByCategory(2));
-//		projectsDAO.addProject("test3", "description3", 3, 300, 30, 2, 1);
-//		usersDAO.addUser("login2", "password2", "email2", "firstName2", "lastName2");
-		
-		System.out.println(usersDAO.findAllUsers());	
-		System.out.println(usersDAO.checkLogin("root", "root"));
-		
-	}
+
 }

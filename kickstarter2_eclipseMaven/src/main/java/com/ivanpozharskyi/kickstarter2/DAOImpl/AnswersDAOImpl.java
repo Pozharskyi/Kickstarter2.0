@@ -171,13 +171,5 @@ public class AnswersDAOImpl implements AnswersDAO{
 
 		return answers;
 	}
-	
-//	public static void main(String[] args) throws AnswersDAOException {
-//
-//		AnswersDAOImpl answersDAOImpl = new AnswersDAOImpl();
-//
-//		System.out.println(answersDAOImpl.findAnswerById(1));
-//		System.out.println(answersDAOImpl.findAnswerByQuestion("question1"));
-//
-//	}
+
 }

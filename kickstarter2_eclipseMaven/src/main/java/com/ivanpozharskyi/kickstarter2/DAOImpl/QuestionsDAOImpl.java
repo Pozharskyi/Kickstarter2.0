@@ -176,13 +176,5 @@ public class QuestionsDAOImpl implements QuestionsDAO {
 
 		return questions;
 	}
-//
-//	public static void main(String[] args) throws QuestionsDAOException {
-//
-//		QuestionsDAOImpl questionsDAOImpl = new QuestionsDAOImpl();
-//
-//		System.out.println(questionsDAOImpl
-//				.findQuestionByProject("batmanProject"));
-//
-//	}
+
 }

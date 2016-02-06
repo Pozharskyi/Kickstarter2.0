@@ -178,12 +178,4 @@ public class QuotesDAOImpl implements QuotesDAO{
 		
 	}
 
-	public static void main(String[] args) throws QuotesDAOException {
-		QuotesDAOImpl quotesDAOImpl = new QuotesDAOImpl();
-		// quotesDAOImpl.addQuote("quoteTest2","authorTest2");
-		System.out.println(quotesDAOImpl.findRandom().toString());
-		// quotesDAOImpl.deleteQuote(5);
-		System.out.println(quotesDAOImpl.findSize());
-
-	}
 }

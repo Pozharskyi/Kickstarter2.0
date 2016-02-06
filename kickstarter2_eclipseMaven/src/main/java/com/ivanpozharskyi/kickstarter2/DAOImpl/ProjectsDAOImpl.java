@@ -15,11 +15,7 @@ import com.ivanpozharskyi.kickstarter2.connection.ConnectionManager;
 import com.ivanpozharskyi.kickstarter2.entity.Project;
 
 public class ProjectsDAOImpl implements ProjectsDAO{
-//	CategoriesDAO categoriesDAO;
 	
-//	public ProjectsDAOImpl(CategoriesDAO categoriesDAO) {
-//		this.categoriesDAO = categoriesDAO;
-//	}
 	@Override
 	public int findSize() throws ProjectsDAOException {
 		String query = "SELECT count(*) AS size FROM projects ";
@@ -342,15 +338,4 @@ public class ProjectsDAOImpl implements ProjectsDAO{
 		}
 		return projects;
 	}
-//	public static void main(String[] args) throws  ProjectsDAOException {
-////	CategoriesDAO categoriesDAO = new CategoriesDAOImpl();
-//	ProjectsDAO projectsDAO = new ProjectsDAOImpl();
-//	
-//	System.out.println(projectsDAO.findSize());
-////	System.out.println(projectsDAO.findProjectsByCategory(2));
-////	projectsDAO.addProject("test3", "description3", 3, 300, 30, 2, 1);
-//	System.out.println(projectsDAO.findAllProjects());
-//	System.out.println(projectsDAO.findProjectsByCategory("sport"));	
-//	
-//}
 }

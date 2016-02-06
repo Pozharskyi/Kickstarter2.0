@@ -15,11 +15,6 @@ import com.ivanpozharskyi.kickstarter2.entity.Category;
 
 public class CategoriesDAOImpl implements CategoriesDAO {
 
-	// public CategoriesDAOImpl(ConnectionManager connectionManager) {
-	//
-	// this.connection = connectionManager.getConnection();
-	// }
-
 	public CategoriesDAOImpl() {
 	}
 	@Override
@@ -47,11 +42,7 @@ public class CategoriesDAOImpl implements CategoriesDAO {
 		}
 	}
 
-	// public void dropCategories() throws SQLException {
-	// Statement statement = connection.createStatement();
-	// statement.execute("DROP TABLE categories");
-	//
-	// }
+
 	@Override
 	public void deleteCategory(int id) throws CategoriesDAOException {
 		String query = "DELETE FROM categories WHERE id = ?";
@@ -178,13 +169,5 @@ public class CategoriesDAOImpl implements CategoriesDAO {
 		}
 		return categories;
 	}
-
-//	public static void main(String[] args) throws  CategoriesDAOException {
-//		CategoriesDAOImpl categoriesDAOImpl = new CategoriesDAOImpl();
-//
-//		System.out.println(categoriesDAOImpl.findAll());
-//		System.out.println(categoriesDAOImpl.findSize());
-//
-//	}
 
 }

@@ -22,7 +22,6 @@ public class DeleteProjectCommand implements Command{
 		DAOFactory daoFactory = DAOFactory.getInstanse();
 	    ProjectsDAO projectsDao =  (ProjectsDAO) daoFactory.getDAO(DAOType.PROJECTSDAO);
 	    int projectId = Integer.parseInt(request.getParameter("project"));
-//	    List<Project> projects = projectsDao.findAllProjects();
 
 	    projectsDao.deleteProject(projectId);
 
