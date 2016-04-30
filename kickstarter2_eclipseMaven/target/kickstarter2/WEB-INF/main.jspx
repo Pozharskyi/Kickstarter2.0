@@ -11,7 +11,7 @@
         </head>
         <body><h3>Welcome</h3>
         <hr/>
-        <c:out value="${sessionScope.user.login}, Hello!"/>
+        <c:out value="${sessionScope.user.firstName}, Hello!"/>
         <hr/>
         <a href="controller">Return to login</a>
         <form name="categoriesView" method="POST" action="controller">

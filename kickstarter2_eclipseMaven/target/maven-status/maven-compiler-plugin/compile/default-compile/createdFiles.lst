@@ -10,6 +10,7 @@ com\ivanpozharskyi\kickstarter2\DAOImpl\CategoriesDAOImpl.class
 com\ivanpozharskyi\kickstarter2\commands\LogoutCommand.class
 com\ivanpozharskyi\kickstarter2\entity\Answer.class
 com\ivanpozharskyi\kickstarter2\DAOFactory\DAOType.class
+com\ivanpozharskyi\kickstarter2\usertags\CSSIncluder.class
 com\ivanpozharskyi\kickstarter2\entity\Quote.class
 com\ivanpozharskyi\kickstarter2\commands\LoginCommand.class
 com\ivanpozharskyi\kickstarter2\DAOExeptions\AnswersDAOException.class
@@ -35,6 +36,7 @@ com\ivanpozharskyi\kickstarter2\commands\Command.class
 com\ivanpozharskyi\kickstarter2\DAOExeptions\UsersDAOException.class
 com\ivanpozharskyi\kickstarter2\commands\RegistrationCommand.class
 com\ivanpozharskyi\kickstarter2\entity\Project.class
+com\ivanpozharskyi\kickstarter2\usertags\ScriptIncluder.class
 com\ivanpozharskyi\kickstarter2\DAOInterface\QuestionsDAO.class
 com\ivanpozharskyi\kickstarter2\DAOImpl\UsersDAOImpl.class
 com\ivanpozharskyi\kickstarter2\commands\DeleteProjectCommand.class

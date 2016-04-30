@@ -50,20 +50,7 @@
 		<input type="hidden" name="category" value="${category}"> 
 		<input type="submit" value="ADD">
 	</form>
-		<form name="AddProjectInCategory" action="controller" method="post">
-		<input type="hidden" name="command" value="addProjectInCategory">
-		Add project in
-		<c:out value="${category}" />
-		category<br /> 
-		Name:<br> <input type="text" name="name" value=""><br>
-		Description:<br> <input type="text" name="description" value=""><br>
-		MoneyGot: <br> <input type="text" name="moneyGot" value=""><br>
-		MoneyNeed: <br> <input type="text" name="moneyNeed" value=""><br>	
-		DaysLeft: <br> <input type="text" name="daysLeft" value=""><br>
-		<!-- <input type="hidden" name="user" value="${sessionScope.user.id}"> -->
-		<input type="hidden" name="category" value="${category}"> 
-		<input type="submit" value="ADD">
-	</form>
+	
 
 </body>
 </html>
